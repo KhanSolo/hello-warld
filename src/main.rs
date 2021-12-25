@@ -1,7 +1,7 @@
 use std::time::{Duration, SystemTime};
 
 fn main() {
-    let now = SystemTime::now();    
+    let now = SystemTime::now();
 
     // emulate some work
     std::thread::sleep(Duration::from_millis(1100));
@@ -9,6 +9,4 @@ fn main() {
     let elapsed = now.elapsed().unwrap();
 
     println!("{:?}", elapsed);
-    //println("");
-
 }
