@@ -1,5 +1,4 @@
-//use std::process::Command;
-use assert_cmd::{Command, assert::OutputAssertExt};
+use assert_cmd::{Command};
 
 #[test]
 fn sample() {
