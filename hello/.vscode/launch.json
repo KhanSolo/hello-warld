@@ -44,6 +44,43 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "Debug executable 'true'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=true",
+                    "--package=hello"
+                ],
+                "filter": {
+                    "name": "true",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'true'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=true",
+                    "--package=hello"
+                ],
+                "filter": {
+                    "name": "true",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug integration test 'cli'",
             "cargo": {
                 "args": [
